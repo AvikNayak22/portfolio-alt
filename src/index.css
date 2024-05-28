@@ -1,0 +1,23 @@
+@import url(https://fonts.googleapis.com/css?family=REM:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: 221.2 83.2% 53.3%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 210 40% 96.1%;
+  --secondary-foreground: 0, 0%, 51%;
+  --background: 0, 0%, 97%;
+  --foreground: 222.2 84% 4.9%;
+  --border: 214.3 31.8 % 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 221.2 83.2% 53.3%;
+  --radius: 0.75rem;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "REM", "Arial Narrow", Arial, sans-serif;
+  background-color: hsl(var(--background));
+}
