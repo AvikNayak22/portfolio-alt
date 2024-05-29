@@ -1,8 +1,8 @@
-import React from "react";
 import "./App.css";
 import Bio from "./sections/Bio";
 import Skills from "./sections/Skills";
 import Projects from "./sections/Projects";
+import Contact from "./sections/Contact";
 
 const App = () => {
   return (
@@ -14,6 +14,7 @@ const App = () => {
         </div>
         <div className="col-span-2">
           <Projects />
+          <Contact />
         </div>
       </div>
     </>

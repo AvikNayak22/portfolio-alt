@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=REM:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Reddit+Sans:200,300,regular,500,600,700,800,900);
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,11 +13,11 @@
   --border: 214.3 31.8 % 91.4%;
   --input: 214.3 31.8% 91.4%;
   --ring: 221.2 83.2% 53.3%;
-  --radius: 0.75rem;
+  --radius: 0.75Lato;
 }
 
 body {
   min-height: 100vh;
-  font-family: "REM", "Arial Narrow", Arial, sans-serif;
+  font-family: "Reddit Sans", "Arial Narrow", Arial, sans-serif;
   background-color: hsl(var(--background));
 }
