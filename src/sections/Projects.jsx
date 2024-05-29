@@ -1,4 +1,3 @@
-import React from "react";
 import ProjectCard from "../components/ProjectCard";
 
 const projects = [
@@ -8,21 +7,20 @@ const projects = [
       "Write and Preview your HTML, CSS, Javascript code in the browser.",
     url: "https://code-brackets.vercel.app/",
     imgUrl:
-      "https://www.logolynx.com/images/logolynx/d2/d2e29e107f28e5cdfc2501a6a2163409.jpeg",
+      "https://cdn0.iconfinder.com/data/icons/website-design-4/468/Lcd_With_Coding_icons-512.png",
   },
   {
     name: "SearXYZ",
     description: "Paste your query and get answers immediately.",
     url: "https://searxyz.netlify.app/",
-    imgUrl:
-      "https://www.logolynx.com/images/logolynx/d2/d2e29e107f28e5cdfc2501a6a2163409.jpeg",
+    imgUrl: "https://cdn-icons-png.flaticon.com/512/6509/6509907.png",
   },
   {
     name: "CheckWallet",
     description: "Track your expenses, take control over your spending.",
     url: "https://checkwallet.cyclic.app/",
     imgUrl:
-      "https://www.logolynx.com/images/logolynx/d2/d2e29e107f28e5cdfc2501a6a2163409.jpeg",
+      "https://static.vecteezy.com/system/resources/previews/000/350/068/original/vector-wallet-icon.jpg",
   },
 ];
 

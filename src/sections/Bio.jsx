@@ -1,5 +1,5 @@
-import React from "react";
-import { AtSign, GitBranch, Linkedin } from "lucide-react";
+import { FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 const Bio = () => {
   return (
@@ -19,21 +19,30 @@ const Bio = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Linkedin className="text-blue-400 hover:text-blue-500 cursor-pointer " />
+          <FaLinkedinIn
+            size={25}
+            className="text-blue-400 hover:text-blue-500 cursor-pointer "
+          />
         </a>
         <a
           href="mailto:nayakavik19@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <AtSign className="text-red-400 hover:text-red-500 cursor-pointer " />
+          <MdEmail
+            size={25}
+            className="text-red-400 hover:text-red-500 cursor-pointer "
+          />
         </a>
         <a
           href="https://github.com/AvikNayak22"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <GitBranch className="text-slate-500 hover:text-slate-700 cursor-pointer " />
+          <FaGithub
+            size={25}
+            className="text-slate-500 hover:text-slate-700 cursor-pointer "
+          />
         </a>
       </div>
     </section>

@@ -1,5 +1,4 @@
-import { ChevronRight } from "lucide-react";
-import React from "react";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 const ProjectCard = ({ name, description, url, imgUrl }) => {
   return (
@@ -22,7 +21,7 @@ const ProjectCard = ({ name, description, url, imgUrl }) => {
         <p className="text-secondary-foreground">{description}</p>
       </div>
       <div>
-        <ChevronRight />
+        <FaExternalLinkAlt size={18} className="mr-1" />
       </div>
     </a>
   );
