@@ -12,16 +12,14 @@ const projects = [
   },
   {
     name: "SearXYZ",
-    description:
-      "SearXYZ is a simple web search app that provides you with accurate information about probably everything.",
+    description: "Paste your query and get answers immediately.",
     url: "https://searxyz.netlify.app/",
     imgUrl:
       "https://www.logolynx.com/images/logolynx/d2/d2e29e107f28e5cdfc2501a6a2163409.jpeg",
   },
   {
     name: "CheckWallet",
-    description:
-      "CheckWallet makes it easy for you to track your expenses and help you to make smart decisions about you finances.",
+    description: "Track your expenses, take control over your spending.",
     url: "https://checkwallet.cyclic.app/",
     imgUrl:
       "https://www.logolynx.com/images/logolynx/d2/d2e29e107f28e5cdfc2501a6a2163409.jpeg",
@@ -31,7 +29,7 @@ const projects = [
 const Projects = () => {
   return (
     <>
-      <h1 className="text-4xl text-left font-bold mb-2 ">Recent Projects</h1>
+      <h1 className="text-3xl text-left font-bold mb-2 ">Recent Projects</h1>
       <ul className="bg-white text-left rounded-xl p-4 ">
         {projects.map((project, index) => (
           <li key={index}>

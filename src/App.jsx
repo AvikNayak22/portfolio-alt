@@ -3,6 +3,7 @@ import Bio from "./sections/Bio";
 import Skills from "./sections/Skills";
 import Projects from "./sections/Projects";
 import Contact from "./sections/Contact";
+import Footer from "./sections/Footer";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
           <Contact />
         </div>
       </div>
+      <Footer />
     </>
   );
 };

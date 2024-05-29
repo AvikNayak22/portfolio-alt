@@ -8,21 +8,38 @@ const Contact = () => {
   };
 
   const [formDetails, setFormDetails] = useState(initialState);
+  const [submitted, setSubmitted] = useState(false);
 
   const onValueChange = (fieldName, value) => {
     const updatedFormDetails = { ...formDetails, [fieldName]: value };
     setFormDetails(updatedFormDetails);
   };
 
-  const onHandleSubmit = (e) => {
+  const onHandleSubmit = async (e) => {
     e.preventDefault();
-    console.log(formDetails);
+    const formData = new FormData();
+    for (const name in formDetails) {
+      formData.append(name, formDetails[name]);
+    }
+
+    try {
+      const response = await fetch("https://devform.vercel.app/api/submit/21", {
+        method: "POST",
+        body: formData,
+        contentType: "application/json",
+      });
+
+      const result = await response.json();
+      setSubmitted(true);
+    } catch (error) {
+      console.log(error);
+    }
     setFormDetails(initialState);
   };
 
   return (
     <section>
-      <h1 className="text-4xl text-left font-bold my-6 ">Contact Me</h1>
+      <h1 className="text-3xl text-left font-bold my-6 ">Contact Me</h1>
       <div className="bg-white text-left rounded-xl p-8 ">
         <p>
           Interested in working together? Contact me at{" "}
@@ -50,6 +67,9 @@ const Contact = () => {
             value={formDetails.message}
             onChange={(e) => onValueChange("message", e.target.value)}
           />
+          {submitted ? (
+            <p className="text-green-600 ">Your message has beeen sent!</p>
+          ) : null}
           <button
             type="submit"
             className="bg-primary text-white rounded-xl px-4 py-3"

@@ -7,13 +7,13 @@ const Bio = () => {
       <img
         src="/newphoto.jpg"
         alt="profile picture"
-        className="h-32 w-32 rounded-full object-cover border border-gray-300"
+        className="h-32 w-32 rounded-full object-cover border border-gray-300 mx-auto md:mx-0"
       />
       <h1 className="text-lg md:text-2xl font-bold mt-3">Avik Nayak</h1>
       <p className="text-secondary-foreground py-2">
         Web Developer and Tech Enthusiast
       </p>
-      <div className="flex flex-row gap-2 mt-2">
+      <div className="flex flex-row justify-center md:justify-start gap-2 mt-2">
         <a
           href="https://www.linkedin.com/in/avik-nayak"
           target="_blank"
